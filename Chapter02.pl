@@ -23,7 +23,7 @@ say "Enter your second number: ";
 my $second = <STDIN>;
 say "result is ".($first*$second);
 
-# Repeat word n times
+# Repeat word "n" times
 say "\nChapter02 Ex05";
 say "Enter a word:";
 chomp (my $word = <STDIN>);
