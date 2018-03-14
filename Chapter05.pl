@@ -10,3 +10,13 @@ chomp(my @files = <>);
 print reverse <>;
 <>;
 
+#Chapter 05 Ex 02&3: string formatting
+say "Enter some input on separate lines: ";
+chomp(my @input=<>);
+say "Enter whe width of the line you want to format the output by:";
+chomp(my $width = <>);
+say "1234567890" x ($width/10);
+foreach(@input){
+	printf "%${width}s\n", $_;
+}
+<>;
