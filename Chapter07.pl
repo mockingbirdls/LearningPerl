@@ -3,10 +3,10 @@ use 5.010;
 use strict;
 use warnings;
 
-#Ex01: find fred
+say "Ex01: find fred";
 match("fred");
 
-#EX02: The Big Fred
+say "EX02: The Big Fred";
 match("[Ff]red");
 
 #Ex03: Match dots
