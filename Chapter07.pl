@@ -3,47 +3,31 @@ use 5.010;
 use strict;
 use warnings;
 
-#Chapter 07 Ex01: find fred
+#Ex01: find fred
+match("fred");
 
-@ARGV = "Chapter07EX.txt";
+#EX02: The Big Fred
+match("[Ff]red");
 
+#Ex03: Match dots
+match("\.");
+
+#Ex04: Match a word thath starts with capital letter
+match("[A-Z][a-z]+");
+
+#Ex05:
+
+
+
+sub match{
+	@ARGV = "Chapter07EX.txt";
+	my $regex = $_[0] ;
 while (<>) {
 	chomp;
-	if (/fred/) {
+	if (/$regex/) {
 		say $_;
 	}
-	
-}
-
-print "\n";
-#Chapter 07 EX 02: The Big Fred
-
-@ARGV = "Chapter07EX.txt";
-while (<>) {
-	chomp;
-	if (/[Ff]red/) {
-		say $_;
-	}
-	
-}
-print "\n";
-#Chapter 07 Ex03:
-@ARGV = "Chapter07EX.txt";
-while (<>) {
-	chomp;
-	if (/\./) {
-		say $_;
-	}
-	
 }
 print "\n";
-#Chapter 07 Ex 04;
-@ARGV = "Chapter07EX.txt";
-while (<>) {
-	chomp;
-	if (//) {
-		say $_;
-	}
-	
 }
 <>;
