@@ -9,15 +9,17 @@ match("fred");
 say "EX02: The Big Fred";
 match("[Ff]red");
 
-#Ex03: Match dots
-match("\.");
+say "Ex03: Match dots";
+match('\.');
 
-#Ex04: Match a word thath starts with capital letter
+say "Ex04: Match a word thath starts with capital letter";
 match("[A-Z][a-z]+");
 
-#Ex05:
+say "Ex05: Match the same letter two times in a row";
+match('(\S)\1');
 
-
+say "Ex06: match fred and wilma";
+match("(fred.*wilma)|(wilma.*fred)");
 
 sub match{
 	@ARGV = "Chapter07EX.txt";
@@ -28,6 +30,5 @@ while (<>) {
 		say $_;
 	}
 }
-print "\n";
 }
 <>;
