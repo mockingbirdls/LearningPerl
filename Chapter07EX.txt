@@ -1,20 +1,12 @@
-fred flinstone
-frederik georgiev
-albert fredstein
-mamfred
-fred and barney
-Fredd
-wilma
-alan
-Mr. Slate
-...
-Hi. Nice to meet you.
-some random text
-FRED
+FRED 
+fred and wilma
 Fred
+mamfred
+Mr. Bean
+...
+HI. How are you?
+frEd
+bamm-bamm
 llama
-  two spaces
+  
 rubble
-mississippi
-fred likes wilma
-wilma and fred are the best
